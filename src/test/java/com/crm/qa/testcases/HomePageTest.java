@@ -27,9 +27,13 @@ public class HomePageTest extends TestBase {
 	}
 	
 	@Test
-	public void getAllItemsPrice() {
-		homePage.extractAllItemsPrice();
-		homePage.printArray();
+	public void getAllItemsPriceAccending() {
+		homePage.AscendingOrder();
+	}
+	
+	@Test
+	public void getAllItemsPriceDesccending() {
+		homePage.DescendingOrder();
 	}
 	
 	@AfterMethod
